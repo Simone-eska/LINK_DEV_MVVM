@@ -13,6 +13,8 @@ import com.example.viewmodeltest.R;
 import com.example.viewmodeltest.explore.ItemClickListener;
 import com.example.viewmodeltest.explore.model.Article;
 import com.example.viewmodeltest.utils.Utils;
+import com.squareup.picasso.Picasso;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -67,6 +69,10 @@ public class ExploreRecyclerAdapter extends  RecyclerView.Adapter<ExploreRecycle
             myViewHolder.subTitleTextView.setText((by+articleList.get(i).getAuthor()));
         if(articleList.get(i).getPublishedAt()!=null){
             myViewHolder.dateTextView.setText(Utils.getDateFormat(articleList.get(i).getPublishedAt()));
+        }
+        if(articleList.get(i).getUrlToImage()!=null||!articleList.get(i).getUrlToImage().isEmpty()){
+            Picasso.get().load(articleList.get(i).getUrlToImage())
+                    .placeholder(R.drawable.placeholder).into(myViewHolder.img);
         }
     }
 
