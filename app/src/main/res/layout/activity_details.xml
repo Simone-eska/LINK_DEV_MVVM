@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_margin="@dimen/_20sdp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+     android:layout_height="match_parent">
+
+    <ScrollView
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:src="@drawable/placeholder"
+                    android:id="@+id/details_img"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitXY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_margin="@dimen/_10sdp"
+                    android:id="@+id/details_date_tv"
+                    android:layout_gravity="end"
+                    android:textAlignment="viewEnd"
+                    android:textSize="@dimen/_10ssp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/details_title_tv"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15ssp"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/details_subtitle_tv"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/details_description_tv"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="@android:color/darker_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+        android:id="@+id/open_website_btn"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/open_website"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_15ssp"
+        android:padding="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

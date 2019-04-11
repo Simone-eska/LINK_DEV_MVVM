@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">ViewModelTest</string>
+    <string name="welcome">Welcome</string>
+    <string name="user_name">Tony Roshdy</string>
+    <string name="loading">Loading ....</string>
+    <string name="by">By</string>
+    <string name="open_website">OPEN WEBSITE</string>
+    <string name="explore">Explore</string>
+    <string name="live">Live Chat</string>
+    <string name="gallery">OPEN WEBSITE</string>
+    <string name="wish_list">Wish List</string>
+    <string name="e_magazine">E-Magazine</string>
+</resources>

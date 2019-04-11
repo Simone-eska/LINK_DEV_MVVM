@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:src="@drawable/placeholder"
+        android:id="@+id/article_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        />
+    <TextView
+        android:id="@+id/article_title_tv"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_15ssp"
+        android:layout_gravity="start"
+        android:textAlignment="viewStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/article_subtitle_tv"
+        android:layout_gravity="start"
+        android:textAlignment="viewStart"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="@dimen/_10sdp"
+        android:id="@+id/article_date_tv"
+        android:layout_gravity="end"
+        android:textAlignment="viewEnd"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
