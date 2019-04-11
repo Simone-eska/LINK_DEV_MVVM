@@ -2,6 +2,7 @@ package com.example.viewmodeltest.base;
 
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.example.viewmodeltest.R;
@@ -14,12 +15,21 @@ public abstract class BaseActivity extends AppCompatActivity{
         super.setContentView(layoutResID);
         initToolbar();
     }
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId()==android.R.id.home) {
+          //  performHomeClickAction();
+                return true;
+        }
+        return super.onOptionsItemSelected(item);
+    }
 
     private void initToolbar() {
         final Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setHomeButtonEnabled(false);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
     }
 
     private static LoadingDialog loadingDialog =new LoadingDialog();
@@ -43,5 +53,6 @@ public abstract class BaseActivity extends AppCompatActivity{
         hideLoadingDialog();
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
+    //abstract void performHomeClickAction();
 
 }

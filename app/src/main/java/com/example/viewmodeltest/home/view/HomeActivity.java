@@ -21,6 +21,7 @@ public class HomeActivity extends BaseActivity {
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawerLayout, R.string.app_name, R.string.app_name);
         drawerLayout.addDrawerListener(toggle);
+
         toggle.syncState();
 
     }
