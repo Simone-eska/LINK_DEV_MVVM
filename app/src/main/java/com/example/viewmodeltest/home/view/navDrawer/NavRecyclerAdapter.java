@@ -10,11 +10,6 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.viewmodeltest.R;
-import com.example.viewmodeltest.explore.ItemClickListener;
-import com.example.viewmodeltest.explore.model.Article;
-import com.example.viewmodeltest.utils.Utils;
-
-import java.util.List;
 
 public class NavRecyclerAdapter extends  RecyclerView.Adapter<NavRecyclerAdapter.NavItemViewHolder> {
 
@@ -45,6 +40,7 @@ public class NavRecyclerAdapter extends  RecyclerView.Adapter<NavRecyclerAdapter
             this.view=v;
             titleTextView = (TextView)v.findViewById(R.id.nav_title_tv);
             img = (ImageView)v.findViewById(R.id.nav_img);
+            v.setOnClickListener(this);
         }
         @Override
         public void onClick(View v) {

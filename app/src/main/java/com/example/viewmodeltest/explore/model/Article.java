@@ -55,12 +55,12 @@ public class Article implements Parcelable {
 
     @Override
     public void writeToParcel(Parcel parcel, int i) {
-        parcel.writeValue(author);
-        parcel.writeValue(title);
-        parcel.writeValue(description);
-        parcel.writeValue(url);
-        parcel.writeValue(urlToImage);
-        parcel.writeValue(publishedAt);
+        parcel.writeString(author);
+        parcel.writeString(title);
+        parcel.writeString(description);
+        parcel.writeString(url);
+        parcel.writeString(urlToImage);
+        parcel.writeString(publishedAt);
     }
 
     public String getAuthor() {

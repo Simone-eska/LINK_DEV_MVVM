@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
-    android:layout_margin="@dimen/_20sdp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical"
      android:layout_height="match_parent">
-
+    <include
+        layout="@layout/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
     <ScrollView
+        android:layout_margin="@dimen/_20sdp"
         android:scrollbars="none"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -40,6 +43,7 @@
             </RelativeLayout>
 
             <TextView
+                android:layout_marginTop="@dimen/_4sdp"
                 android:id="@+id/details_title_tv"
                 android:textColor="@android:color/black"
                 android:textSize="@dimen/_15ssp"

@@ -46,7 +46,8 @@ public class ExploreRecyclerAdapter extends  RecyclerView.Adapter<ExploreRecycle
             titleTextView = (TextView)v.findViewById(R.id.article_title_tv);
             subTitleTextView = (TextView)v.findViewById(R.id.article_subtitle_tv);
             dateTextView = (TextView)v.findViewById(R.id.article_date_tv);
-            img = (ImageView)v.findViewById(R.id.imageView);
+            img = (ImageView)v.findViewById(R.id.article_img);
+            v.setOnClickListener(this);
         }
 
         @Override
@@ -70,7 +71,7 @@ public class ExploreRecyclerAdapter extends  RecyclerView.Adapter<ExploreRecycle
         if(articleList.get(i).getPublishedAt()!=null){
             myViewHolder.dateTextView.setText(Utils.getDateFormat(articleList.get(i).getPublishedAt()));
         }
-        if(articleList.get(i).getUrlToImage()!=null||!articleList.get(i).getUrlToImage().isEmpty()){
+        if(articleList.get(i).getUrlToImage()!=null&&!articleList.get(i).getUrlToImage().isEmpty()){
             Picasso.get().load(articleList.get(i).getUrlToImage())
                     .placeholder(R.drawable.placeholder).into(myViewHolder.img);
         }

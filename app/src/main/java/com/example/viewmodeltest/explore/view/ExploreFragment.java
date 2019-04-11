@@ -66,6 +66,7 @@ public class ExploreFragment extends BaseFragment<ArticlesResponse> implements I
     public void onClickListener(Article item) {
         Intent intent= new Intent(getActivity(), DetailsActivity.class);
         intent.putExtra("articleItem",item);
+        intent.putExtra("a","b");
         startActivity(intent);
     }
 }
