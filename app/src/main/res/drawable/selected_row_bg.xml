@@ -6,7 +6,7 @@
            <solid android:color="@android:color/white"/>
        </shape>
    </item>
-    <item android:gravity="start">
+    <item android:gravity="start" android:width="@dimen/_5sdp">
         <shape android:shape="rectangle">
             <size android:width="@dimen/_5sdp"/>
             <solid android:color="@color/colorPrimaryDark"/>
