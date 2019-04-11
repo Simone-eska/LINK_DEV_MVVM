@@ -1,13 +1,13 @@
 <resources>
-    <string name="app_name">ViewModelTest</string>
-    <string name="welcome">Welcome</string>
+    <string name="app_name">LINK DEVELOPMENT</string>
+    <string name="welcome">أهلا بك</string>
     <string name="user_name">Tony Roshdy</string>
-    <string name="loading">Loading ....</string>
-    <string name="by">By</string>
-    <string name="open_website">OPEN WEBSITE</string>
-    <string name="explore">Explore</string>
-    <string name="live">Live Chat</string>
-    <string name="gallery">OPEN WEBSITE</string>
-    <string name="wish_list">Wish List</string>
-    <string name="e_magazine">E-Magazine</string>
+    <string name="loading">جار التحميل ....</string>
+    <string name="by">بواسطة</string>
+    <string name="open_website">فتح الموقع</string>
+    <string name="explore">استكشف</string>
+    <string name="live">الدردشة المباشرة</string>
+    <string name="gallery">المعرض</string>
+    <string name="wish_list">قائمة الأمنيات</string>
+    <string name="e_magazine">المجلة الإلكترونية</string>
 </resources>
