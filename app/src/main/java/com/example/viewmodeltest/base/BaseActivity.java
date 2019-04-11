@@ -1,14 +1,26 @@
 package com.example.viewmodeltest.base;
 
-import android.arch.lifecycle.Observer;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.Toast;
 
+import com.example.viewmodeltest.R;
 import com.example.viewmodeltest.customViews.LoadingDialog;
 
 public abstract class BaseActivity extends AppCompatActivity{
+
+    @Override
+    public void setContentView(int layoutResID) {
+        super.setContentView(layoutResID);
+        initToolbar();
+    }
+
+    private void initToolbar() {
+        final Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setHomeButtonEnabled(false);
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
 
     private static LoadingDialog loadingDialog =new LoadingDialog();
 
