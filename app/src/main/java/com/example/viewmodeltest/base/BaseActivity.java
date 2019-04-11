@@ -18,7 +18,7 @@ public abstract class BaseActivity extends AppCompatActivity{
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId()==android.R.id.home) {
-          //  performHomeClickAction();
+            performHomeClickAction();
                 return true;
         }
         return super.onOptionsItemSelected(item);
@@ -53,6 +53,6 @@ public abstract class BaseActivity extends AppCompatActivity{
         hideLoadingDialog();
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
-    //abstract void performHomeClickAction();
+    abstract protected void performHomeClickAction();
 
 }
