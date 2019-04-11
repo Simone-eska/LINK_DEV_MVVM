@@ -53,6 +53,9 @@ public abstract class BaseActivity extends AppCompatActivity{
         hideLoadingDialog();
         Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
     }
-    abstract protected void performHomeClickAction();
+
+     protected void performHomeClickAction(){
+        finish();
+     }
 
 }

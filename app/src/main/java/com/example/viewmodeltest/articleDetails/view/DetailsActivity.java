@@ -44,8 +44,4 @@ public class DetailsActivity extends BaseActivity {
         }
     }
 
-    @Override
-    protected void performHomeClickAction() {
-        finish();
-    }
 }
